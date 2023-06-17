@@ -1,0 +1,74 @@
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<!--Comentário -->
+		<title>Agendamento</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href="agendamento.css">
+	</head>
+    <div class="box">
+	<form action="">
+		<br><br>
+        
+        
+		<fieldset>
+		<legend><b>Agendamento de avaliação nutricional</legend><br>
+        <div class="input-box">
+		<input type="text" name="nome" id="nome" size="60" maxlength="60" class="inputUser" required>
+	<label for="nome">Nome completo</label>
+    	<br><br>
+        <div class="input-box">
+            <input type="radio" value="Masculino" name="sexo" id="sexo" required>
+        <label for="sexo">Masculino</label>
+            <input type="radio" value="Feminino" name="sexo" id="sexo" required>
+            <label for="sexo">Feminino</label>
+            <br><br>
+        <div class="input-box">
+            <input type="number" name="idade" id="idade" min="1" max="140" class="inputUser" required>
+        <label for="idade">Selecione sua idade</label>
+		<br><br>
+		
+		<div class="input-box">
+            <input type="number" min="1" max="250" class="inputUser" required>
+            <label for="altura">Selecione sua altura</label>
+        </div>
+        <br><br>
+			Selecione a cidade da consulta:
+		<select name="cidades">
+		  <option value="SA"> Santo André</option>
+		  <option value="SBC"> São Bernardo</option>
+		  <option value="SCS"> São Caetano</option>
+		  <option value="MA"> Mauá</option>
+		  <option value="SP"> São Paulo</option>
+		 </select>
+         <br><br>
+		Selecione a data:
+		<input type="date":><br><br>
+		Selecione o horário:
+		<input type="time":><br><br>
+            <legend> Selecione o resultado do seu IMC:</legend>
+            <br>
+            <input type="radio" name="cor" onclick="document.bgColor='#FFD291'">Abaixo do peso &nbsp;
+            <input type="radio" name="cor" onclick="document.bgColor='#FFC673'">Peso Normal &nbsp;
+            <input type="radio" name="cor" onclick="document.bgColor='#FFBA55'">Sobrepeso &nbsp;
+            <input type="radio" name="cor" onclick="document.bgColor='#FFAE37'">Obesidade &nbsp;
+            <br><br>           
+		
+	
+		OBSERVAÇÕES: <br>
+		<textarea cols="80" rows="5"></textarea>
+	
+		<br><br>
+	<br><br>
+	<center>
+	<input type="submit" value="ENVIAR">&nbsp;&nbsp;
+	<input type="reset" value="LIMPAR">&nbsp;&nbsp;
+    </center>
+</fieldset>	
+	</form>	
+</div></div>
+	</body>
+</html>
+ 
